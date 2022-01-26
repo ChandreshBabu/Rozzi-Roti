@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/img/logo.jpg">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>About Us | Rozzi-रोटी</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/about_us.css" />
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-default navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+          <img src="/img/logo.jpg" width="60" height="60"
+        /></a>
+        <a class="navbar-brand" id="lol" href="/">Rozzi<b>-रोटी</b></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          id="navbarCollapse"
+          class="navbar-collapse justify-content-start collapse in"
+          aria-expanded="true"
+        >
+        
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a
+                href="/about-us"
+                class="nav-link"
+                id="node"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact/to/us" class="nav-link" id="node">Contact</a>
+            </li>
+
+            <% if(user) {%>
+              <li class="nav-item">
+                <a href="/users/dashboard" class="nav-link" id="node">Dashboard</a>
+              </li>
+              <%}%>
+            </ul>
+            <% if(!user) {%>
+            <ul class="nav navbar-nav navbar-right ml-auto">
+              <li class="nav-item">
+                <a
+                  class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1"
+                  id="lop"
+                  href="/auth/login"
+                  aria-expanded="false"
+                  style="text-align: center"
+                  >Get Started</a
+                >
+              </li>
+            </ul>
+            <% } %> <% if(user) {%>
+            <ul class="nav navbar-nav navbar-right ml-auto">
+              <li class="nav-item">
+                <a
+                  class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1"
+                  id="lop"
+                  href="/users/profile"
+                  aria-expanded="false"
+                  style="text-align: center"
+                  >Profile</a
+                >
+                <a
+                  class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1"
+                  id="lop"
+                  href="/auth/logout"
+                  aria-expanded="false"
+                  style="text-align: center"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+            <%} %>
+        </div>
+      </nav>
+    </div>
+    
+    <div id="modal-wrapper1" class="modal">
+      <form class="modal-content animate" id="m1">
+        <h3 style="color: #254e58">Terms and Conditions</h3>
+        <h4>Welcome to Rozzi-रोटी!</h4>
+        <p>
+          By accessing this app we assume you accept the following terms and conditions.
+Do not continue to use Rozzi-रोटी if you do not agree to take all of the terms and conditions stated on this page.
+You may access Rozzi-रोटी for your own personal use subjected to restrictions set in the following terms and conditions.
+<br>
+Workers and recruiters must:<br>
+->not provide fake information.<br>
+->Register themselves on our app by providing a valid proof.<br>
+->Provide the absolute information about himself/herself as well as about their work.<br>
+->Update the provided information regularly.<br>
+<br>
+Workers and recruiters should not:<br>
+->Misuse the information from Rozzi-रोटी app.<br>
+->Reproduce, duplicate or copy material from Rozzi-रोटी.<br>
+<br>
+Content Liability:<br>
+We shall not be hold responsible for any content that appears on the app, as it would be as per provided by the workers and recruiters.<br>
+<br>
+Disclaimer:<br>
+To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our app, and the use of this app. Nothing in this disclaimer would be:<br>
+->responsible for your any personal injury<br>
+->responsible for fraud or fraudulent misrepresentation<br>
+As long as the app and the information and services are provided free of charge, we will not be responsible for any loss or damage of any nature.<br>
+        </p>
+        <span
+          onclick="document.getElementById('modal-wrapper1').style.display='none'"
+          class="close"
+          title="Close PopUp"
+          >&times;</span
+        >
+      </form>
+    </div>
+    <div class="container">
+      <div class="row aj2">
+        <h1 class="style-heading">About The-Vanishers</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-1-5"></div>
+        <div class="col-12 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" src="/img/chandu_pic.jpeg" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Chandresh Babu</h3>
+              <h4 class="title">Backend Developer</h4>
+            </div>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=itschandreshbabu@gmail.com&su=SUBJECT&body=BODY"
+                  class="fa fa-google"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ChandreshBabu/"
+                  class="fa fa-github"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/chandreshbabu"
+                  class="fa fa-linkedin"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" src="/img/anand.jpg" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Anand Singh Yadav</h3>
+              <h4 class="title">Backend Developer</h4>
+            </div>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=anandsinghyadavup@gmail.com&su=SUBJECT&body=BODY"
+                  class="fa fa-google"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/AnandSY"
+                  class="fa fa-github"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/anandsy011/"
+                  class="fa fa-linkedin"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" src="/img/yash.jpeg" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Kumar Yash</h3>
+              <h4 class="title">Frontend Developer</h4>
+            </div>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=kumaryashbhu@gmail.com&su=SUBJECT&body=BODY"
+                  class="fa fa-google"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/privateyash"
+                  class="fa fa-github"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/kumaryash27/"
+                  class="fa fa-linkedin"
+                  aria-hidden="true"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3"></div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <footer class="footer1" id="contact/to/us" style="margin-top: 20px">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <a href="https://github.com/The-Vanishers" style="color: #271013 " target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"></i> Visit us
+            </a>
+          </div>
+          <div class="col-xl-4">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=get.rozziroti@gmail.com&su=SUBJECT&body=BODY"
+              style="color: #271013"
+              target="_blank"
+              ><i
+                class="fa fa-envelope"
+                aria-hidden="false"
+                style="color: #271013"
+              ></i>
+              Mail us for any query</a
+            >
+          </div>
+          <div class="col-xl-4">
+            <a
+              href="#terms&conditions"
+              onclick="document.getElementById('modal-wrapper1').style.display='block'"
+              style="color: #271013"
+              ><i
+                class="fa fa-laptop"
+                aria-hidden="false"
+                style="color: #271013"
+              ></i>
+              Terms &amp; Conditions</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">Copyright © 2022 The-Vanishers</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
