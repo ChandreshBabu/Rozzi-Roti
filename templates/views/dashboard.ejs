@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>CreateJob | Rozzi-रोटी</title>
+    <title>Dashboard | Rozzi-रोटी</title>
     <link
       href="https://fonts.googleapis.com/css?family=Varela+Round"
       rel="stylesheet"
@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -27,7 +28,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/css/post_job.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
   </head>
   <body>
     <div>
@@ -36,7 +37,7 @@
           <img src="/img/logo.jpg" width="60" height="60"
         /></a>
 
-        <a class="navbar-brand" id="lol" href="/">Roz<b>GAAR</b></a>
+        <a class="navbar-brand" id="lol" href="/">Rozzi<b>-रोटी</b></a>
         <button
           type="button"
           class="navbar-toggler"
@@ -63,9 +64,7 @@
               <a href="#contact/to/us" class="nav-link" id="node">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="/users/dashboard" class="nav-link" id="node"
-                >Dashboard</a
-              >
+              <a href="/users/dashboard" class="nav-link" id="node">Dashboard</a>
             </li>
           </ul>
 
@@ -92,150 +91,215 @@
         </div>
       </nav>
     </div>
-
-    <div class="container">
-      <div class="stepwizard">
-        <div class="stepwizard-row setup-panel">
-          <div class="stepwizard-step">
-            <a style="color: rgba(232, 243, 234);" href="#step-1" type="button" class="btn btn-primary btn-circle"
-              >|</a
-            >
-            <p>Step 1</p>
-          </div>
-          <div class="stepwizard-step">
-            <a style="color: rgba(232, 243, 234)";
-
-              href="#step-2"
-              type="button"
-              class="btn btn-default btn-circle"
-              disabled="disabled"
-              >|</a
-            >
-            <p>Step 2</p>
-          </div>
-          <div class="stepwizard-step">
-            <a style="color: rgba(232, 243, 234)";
-              href="#step-3"
-              type="button"
-              class="btn btn-default btn-circle"
-              disabled="disabled"
-              >|</a
-            >
-            <p>Step 3</p>
-          </div>
+<!-- 
+<div class="container ra">
+  <div class="boxx">
+    <div class="element effect7">
+      <div class="front7">
+        <h2 style="font-weight: bold">WORKER</h2>
+      </div>
+  
+      <div class="back7">
+        <div class="back-content">
+          <h2>Hover Effect 7</h2>
+          <p>This is a wonderful project.</p>
         </div>
       </div>
-      <form  action="/users/newjobs/jobs" method="POST" id="jobFormD">
-        <div class="row setup-content" id="step-1">
-          <div class="col-xs-12">
-            <div class="col-md-12">
-              <h3 class="aj1">Step 1</h3>
-              <div class="form-group">
-                <label class="jobslabel"
-                  >Choose the Job Title</label
-                >
-                <div >
-                  <input type="radio" id="checkbox" name="jobType" value="Painter" checked  />
-                  <label for="checkbox" style="color: rgba(232, 243, 234);"><span>Painter</span></label>
-                </div>
-
-                <div >
-                  <input
-                    type="radio"
-                    id="checkbox2"
-                    value="Watchman"
-                    name="jobType"                   />
-                  <label for="checkbox2" style="color: rgba(232, 243, 234);"><span>Watchman</span></label>
-                </div>
-                <div >
-                  <input
-                    type="radio"
-                    id="checkbox3"
-                    value="Gardener"
-                    name="jobType" 
-                  />
-                  <label for="checkbox3" style="color: rgba(232, 243, 234);"><span>Gardener</span></label>
-                </div>
-
-                <div  >
-                  <input
-                    type="radio"
-                    id="checkbox4"
-                    value="Maid"
-                    name="jobType" 
-                  />
-                  <label for="checkbox4" style="color: rgba(232, 243, 234);"><span>Maid</span></label>
-                </div>
-              </div>
-            
-          </div>
-          <button
-          style="margin-left: 15px;"
-          class="btn btn-3 mar-btn-1 nextBtn btn-lg pull-right"
-          type="button"
-        >
-          Next
-        </button>
-        </div>
-        
-      </div>
-        </div>
-        <div class="row setup-content" id="step-2">
-          <div class="col-xs-12">
-            <div class="col-md-12">
-              <h3 class="aj2">Step 2</h3>
-              
-              <div class="form-group">
-                <label class="control-label">Describe the position</label>
-                <textarea style="height: 130px;width: 550px;font-size: 15px;color: #254e58;"
-                  maxlength="200"
-                  type="text"
-                  required="required"
-                  name='jd'
-                  class="form-control"
-                  placeholder="Description"
-                ></textarea>
-              </div>
-              <div>
-              <button 
-                class="btn btn-3 mar-btn-2 btn-4 nextBtn btn-lg pull-right"
-                type="button"
-              >
-                Next
-              </button>
-            </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="row setup-content" id="step-3">
-          <div class="col-xs-12">
-            <div class="col-md-12 xx">
-              <h3 class="aj3">Step 3</h3>
-              <div class="form-group">
-                <div>
-                <label class="jobslabel3"
-                  >Final Submit?<br> Remenber that you cannot create multiple job openings of same type.</label
-                ></div>
-              <div>
-              <button
-              class="btn btn-3  btn-5 hara btn-lg pull-right" style="margin-bottom: 170px;"  id='jobSubmitD'  type="submit"
-              >
-                Finish
-              </button>
-            </div>
-            </div>
-            
-          </div>
-        </div>
-      </form>
     </div>
-    <script src="public/js/post_job.js"></script>
+  </div>
+  
+  
+</div> -->
+<%function getFirstWord(str) {%>
+  <%let spaceIndex = str.indexOf(' ');%>
+  <%return spaceIndex === -1 ? str : str.substr(0, spaceIndex);%>
+<%};%>
+<div>
+  <% if(user.type=="worker") {%>
+    <h1  class="my-heading"> Available Job Postings </h1>
+    <%}else {%>
+      <h1  class="my-heading"> Our Worker Profiles </h1>
+    <%}%>
+   
+</div>
+<form id="filter" action="/users/dashboard/filter" method="POST"></form>
+<div class="grid-container">
+  <div class="box1">
+    <div class="imge"> <img src=<%=user.thumbnail%> class="image"> </div>
+    <div class="user-name" style="text-transform: capitalize;"><%= getFirstWord(user.username) %></div>
     
+    <% if(user.type=='recruiter') {%>
+    <div id="container">
+      
+      <button onclick="window.location.href='/users/jobs'" class="learn-more" >
+        <span class="circle" aria-hidden="true">
+          <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">My Jobs</span>
+      </button>
+      
+    </div>
+    <%}%>
+    <section >
+      
+      <% if(user.type=='worker') {%>
+      <div style="font-size: 25px; text-align: center; margin: 2px 8px; color: #254e58; font-weight: 800;"> Filter Jobs</div>
+      <%} else {%>
+      <div style="font-size: 25px; text-align: center; margin: 2px 8px; color: #254e58; font-weight: 800;"> Filter Workers</div>
+      <%}%>
+      
+      
+      <input form="filter" id='one' type='checkbox' name="Gardener" />
+      <label for='one'>
+        <span></span>
+        GARDNERS
+        <ins><i>GARDNERS</i></ins>
+      </label>
+      
+      <input id='two' form="filter" type='checkbox' name="Watchman" />
+      <label for='two'>
+        <span></span>
+        WATCHMEN
+        <ins><i>WATCHMEN</i></ins>
+      </label>
+      
+      <input id='three' form="filter" type='checkbox' name="Painter" />
+      <label for='three'>
+        <span></span>
+        PAINTERS
+        <ins><i>PAINTERS</i></ins>
+      </label>
+      
+      <input id='four' form="filter" type='checkbox' name="Maid" />
+      <label for='four'>
+        <span></span>
+         MAIDS
+        <ins><i>MAIDS</i></ins>
+      </label>
+     </section>
+     <div id="container">
+      <button type='submit' form="filter" class="learn-more">
+        <span class="circle" aria-hidden="true">
+          <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">filter</span>
+      </button>
+     </div>
+    
+  </div>
+
+  
+  <div class="ra">
+  
+    <!-- <% if(user.type=="worker") {%>
+      <div class="row" style="margin-top: 25px; margin-bottom: 0px;"> <h2> Take a look at the job postings. </h2></div>
+    <%}else {%>
+      <div class="row" style="margin-top: 25px; margin-bottom: 0px;"> <h2> Take a look at the worker profiles.</h2></div>
+    <%}%> -->
+    
+  <div class="row r">
+    <% if(user.type=="worker") {%>
+     <% jobs.forEach( (job)=>{%>
+
+      <div class="boxx">
+      <div class="element effect7">
+        <div class="front7">
+          
+
+          <img src= <%= `/img/${job.jobType}.jpg` %> style="filter: blur(3px); width: 100%; height: 100%;">
+          <div class="container contt" style="text-shadow: 0px 0px 5px rgb(0, 0, 0);">
+            <div class="job-title-name-worker">
+            <%= job.jobType %>
+            </div>
+            <div class="job-Address"><p><%= job.jd %></p></div>
+            <div class="job-Address"><h4>Address:</h4><p><%= job.ownerAddress %></p></div>
+          </div>
+        </div>
+    
+        <div class="back7">
+          <div class="back-content">
+            <div><h4 style="color: white;">NAME : </h4><p style="font-size: 15px;  text-transform: capitalize;">
+              <%= job.ownerName %></p></div>
+            <div><h4 style="color: white;">CONTACT : </h4><p style="font-size: 15px;"> <%= job.contact %></p></div>
+            
+            <div><h4 style="color: white;">EMAIL ADDRESS : </h4><p style="font-size: 15px;"> <%= job.email %></p></div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <%}) %>  
+    <%}else {%>
+    <% users.forEach( (worker)=>{%>
+      
+      <div class="boxx">
+        <div class="element effect7">
+          <div class="front7">
+            <img src=<%= worker.thumbnail %>  style="filter: blur(3px); width: 100%; height: 100%;">
+            <div class="container contt" style="text-shadow: 0px 0px 5px rgb(0, 0, 0); text-transform: capitalize;">
+              <div class="job-title-name-worker">
+                <%= worker.username %>
+              </div>
+              
+              <div class="job-Address"><h4>Address:</h4><p>
+                <%= worker.address %> <br> 
+                Works as :
+               <% worker.jobTypes.forEach((jobType)=> { %>
+                  <%=jobType%>
+                <% })%>
+              
+              </p></div>
+              
+            </div>
+          </div>
+      
+          <div class="back7">
+            <div class="back-content">
+              <div><h4 style="color: white;">NAME : </h4><p style="font-size: 15px; text-transform: capitalize;">
+               <%= worker.username %>
+              </p></div>
+              <div><h4 style="color: white;">CONTACT : </h4><p style="font-size: 15px;">
+                <%= worker.contact1 %>
+              </p></div>
+              
+              <% if(worker.contact2) {%>
+                <div><h4 style="color: white;"> SECONDARY CONTACT  : </h4><p style="font-size: 15px;">
+                  <%= worker.contact2 %>
+                </p></div>  
+              <%}%>
+
+
+              <div><h4 style="color: white;">EMAIL ADDRESS : </h4><p style="font-size: 15px;">
+                <%= worker.email %>
+              </p></div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+    <%}) %>       
+    <%}%>
+
+  </div>
+
+  </div>
+  
+<!-- </div> -->
+    <!-- -->
+</div>
+
+
+
+
+
+
+
+
+
+
     <div id="modal-wrapper1" class="modal">
       <form class="modal-content animate" id="m1">
         <h3 style="color: #254e58">Terms and Conditions</h3>
-        <h4>Welcome to Rozzi-रोटी!</h4>
+        <h4>Welcome to Rozzi-रोटी !</h4>
         <p>
           By accessing this app we assume you accept the following terms and conditions.
 Do not continue to use Rozzi-रोटी if you do not agree to take all of the terms and conditions stated on this page.
@@ -316,6 +380,6 @@ As long as the app and the information and services are provided free of charge,
         </div>
       </div>
     </footer>
-    <script src="/js/post_job.js"></script>
+    <script src="/js/dashboard.js"></script>
   </body>
 </html>
